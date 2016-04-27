@@ -1,0 +1,130 @@
+#top {
+display : none;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav{
+	  font-family: 'MB', Arial;
+	  font-size:1.8em;
+	  width:auto;
+	  height:160px;
+	  margin:auto;
+	  text-align : center;
+}
+nav .menu{
+	display:inline-block;
+	text-align : center;
+}
+nav #logo {
+	display:inline-block;
+	padding : 0 25px 0 25px;
+	text-align : center;
+}
+ul{
+	vertical-align :top;
+	list-style : none;
+	position : relative;
+}
+nav ul li{
+	display:inline-block;
+	vertical-align : middle;
+}
+nav ul li a {
+	  display:block;
+	  text-decoration: none;
+	  color:#F7F2EB;
+	  height:54px;
+	  line-height: 52px;
+	  padding:0 25px 0 25px;
+}
+nav li:nth-child(6n+1 ) a {
+border-bottom :4px solid #814567;
+padding:0 38px 0 38px;
+}
+nav li:nth-child(6n+2 ) a {
+border-bottom :4px solid #814567;
+padding:0 32px 0 32px;
+}
+nav li:nth-child(6n+4 ) a {
+border-bottom :4px solid #814567;
+padding:0 20px 0 20px;
+}
+nav li:nth-child(6n+5) a {
+border-bottom :4px solid #814567;
+padding:0 20px 0 20px;
+}
+
+nav li:nth-child(6n+1 ) a:hover {
+	color : #FFA755;
+	border-bottom : 4px solid #FFA755 ;
+}
+
+nav li:nth-child(6n+2) a:hover {
+	color :#68C1AB;
+	border-bottom : 4px solid #68C1AB; 
+}
+
+nav li:nth-child(6n+4) a:hover{
+	color : #FFA755;
+	border-bottom : 4px solid #FFA755; 
+}
+
+nav li:nth-child(6n+5) a:hover {
+	color :#68C1AB;
+	border-bottom : 4px solid #68C1AB; 
+}
+
+nav .menu li
+{
+display:inline-block;
+position:relative;
+}
+nav .menu ul li{
+display:inherit;
+border-radius:0;
+}
+nav .menu ul li:hover{
+border-radius:0;
+}
+
+nav .menu ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .5s all .2s;
+-webkit-transition: .5s all .2s;
+transition: .5s all .2s;
+}
+nav .menu li:hover ul{
+max-height:8em;
+}
+
+/* background des liens sous menus */
+nav .menu li:nth-child(2) li{
+background:#FFA755;
+}
+/* background des liens menus et sous menus au survol */
+nav .menu li:nth-child(2) li a:hover{
+color:#814567;
+}
+nav .menu2{
+font-size:0.8em;
+padding:0;
+margin:0;
+}
+
+nav .menu2 li a {
+height : 45px;
+text-align : center;
+padding:0;
+margin:0;
+
+}
+nav .menu li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
