@@ -48,14 +48,14 @@
 						</div>
 						<div id="info">
 								<div id=adresse>
-									<p>22, rue de Frémicourt <br/>75015 Paris</p>
+									<?php echo "<p>".$adresse."</p>" ?>
 								</div>
 								<div id=time>
-									<p>Du mardi au dimanche : <br/>   12h00-14h00<br/>19h00-22h00</p>
+									<?php echo "<p>".$horaire."</p>" ?>
 								</div>
 								<div id=websitetel>
 									<div id=website>
-										<p><a href= <?php echo "\"http://".$urlSite."\""; ?> id ="lienresto" target=_blank>Nol Bou</a></p>
+										<p><a href= <?php echo "\"http://".$urlSite."\""; ?> id ="lienresto" target=_blank><?php echo$nomResto?></a></p>
 									</div>
 									<div id=tel>
 										<p> <?php echo $tel; ?> </p>

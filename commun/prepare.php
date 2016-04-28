@@ -23,7 +23,8 @@ while ($reponse = $req->fetch()) {
 	$nomResto = $reponse['nomResto'];
 	$pays = $reponse['pays'];
 	$region = $reponse['region'];
-	$adresse = wd_remove_accents(str_replace('\t', '+',$reponse['adresse']));
+	$adressemap = wd_remove_accents(str_replace('\t', '+',$reponse['adresse']));
+	$adresse=$reponse['adresse'];
 	$noteQP = $reponse['noteQP'];
 	$noteAmbiance = $reponse['noteAmbiance'];
 	$noteService = $reponse['noteService'];
@@ -54,7 +55,7 @@ while ($reponse = $req->fetch()) {
 	$tagCuisine[] = $reponse['label'];
 }
 $req->closeCursor();
-$urlmap ="https://maps.googleapis.com/maps/api/geocode/json?address=".str_replace(' ','+',$adresse)."&key=AIzaSyBcB6f9LK2B3Cy_HJ9ZPXU0C1UvSl-4Q7Y";
+$urlmap ="https://maps.googleapis.com/maps/api/geocode/json?address=".str_replace(' ','+',$adressemap)."&key=AIzaSyBcB6f9LK2B3Cy_HJ9ZPXU0C1UvSl-4Q7Y";
 $json = file_get_contents($urlmap);
 $store_data = json_decode(str_replace("&quot;","\"",htmlentities($json)));
 $lat = $store_data->{'results'}[0]->{'geometry'}->{'location'}->{'lat'};

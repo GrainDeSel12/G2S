@@ -47,6 +47,9 @@ body{
 	position : relative;
 	padding-bottom : 140px;
 }
+header {
+margin-top : 60px;
+}
 article a {
 	color : #653451;
 }
@@ -688,7 +691,6 @@ article{
 	margin-right : 20px;
 	max-width : 730px;
 	width : auto;
-	padding-right: 10px;
 }
 article h1 {
 	font-size : 1.4em;
@@ -714,6 +716,7 @@ aside {
 }
 #enbref {
 	padding : 0px 10px 10px 10px ;
+	margin-top : 10px;
 }
 #enbref1 {
  	width : 42%;
